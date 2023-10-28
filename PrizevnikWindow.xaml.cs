@@ -20,11 +20,11 @@ namespace Kyrsach
     /// </summary>
     public partial class PrizevnikWindow : Window
     {
-        private MedDocWindow medDocWindow;
-        private PlaceWindow place;
-        private PassportWindow passport;
-        private AddDataWindow addDataWindow;
-        Main main;
+        private MedDocWindow? medDocWindow;
+        private PlaceWindow? place;
+        private PassportWindow? passport;
+        private AddDataWindow? addDataWindow;
+        Main? main;
         Dictionary<int, string> keyValuePairs = new Dictionary<int, string>() { [0] = "Годен", [1] = "Не годен", [2] = "Осуждён"};
         private string connectName = "Data Source=stud-mssql.sttec.yar.ru,38325; Initial Catalog=user209_db; Integrated Security=False; User ID=user209_db;Password = user209";
         public string ConnectName { get { return connectName; } set { connectName = value; } }

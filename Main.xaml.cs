@@ -108,29 +108,19 @@ namespace Kyrsach
             string email = GetData($"SELECT Email FROM Prizevnik WHERE id={id};");
             string phone = GetData($"SELECT Phone FROM Prizevnik WHERE id={id};");
             string status = GetData($"SELECT Status FROM Prizevnik WHERE id={id}");
-            string passportName = GetData($"SELECT Passport FROM Prizevnik WHERE id={id}");
-            string name = GetData($"SELECT Name FROM Passport WHERE idPassport={passportName}");
-            string familiya = GetData($"SELECT Familiya FROM Passport WHERE idPassport={passportName}");
-            string Otchectvo = GetData($"SELECT Otchestvo FROM Passport WHERE idPassport={passportName}");
-            string dataBorn = GetData($"SELECT dateBurn FROM Passport WHERE idPassport={passportName}");
-            string numberPassport = GetData($"SELECT Number FROM Passport WHERE idPassport={passportName}");
-            string series = GetData($"SELECT Seriya FROM Passport WHERE idPassport={passportName}");
+            string name = GetData($"SELECT Name FROM Passport WHERE idPrizevnik={id}");
+            string familiya = GetData($"SELECT Familiya FROM Passport WHERE idPrizevnik={id}");
+            string Otchectvo = GetData($"SELECT Otchestvo FROM Passport WHERE idPrizevnik={id}");
+            string dataBorn = GetData($"SELECT dateBurn FROM Passport WHERE idPrizevnik={id}");
+            string numberPassport = GetData($"SELECT Number FROM Passport WHERE idPrizevnik={id}");
+            string series = GetData($"SELECT Seriya FROM Passport WHERE idPrizevnik={id}");
             MessageBox.Show(string.Format(infoFormat, familiya, name, Otchectvo, phone, email, status, dataBorn, numberPassport, series), "Информация");
         }
 
-        private void Delete_Click(object sender, RoutedEventArgs e)
-        {
-            List<string> strs = FindData(4);
-            foreach (string item in strs)
-            {
-                AddDeleteDataRow($"DELETE FROM Prizevnik WHERE id={int.Parse(item)};");
-            }
-            FillDataGrid();
-        }
 
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
-            List<string> strs = FindData(4);
+            List<string> strs = FindData(3);
             if (strs.Count == 1)
             {
                 EditWindow editWindow = new EditWindow(this, strs[0]);
@@ -143,7 +133,7 @@ namespace Kyrsach
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-            List<string> strs = FindData(4);
+            List<string> strs = FindData(3);
             foreach (string item in strs)
             {
                 ViewInfo(int.Parse(item));
@@ -161,6 +151,11 @@ namespace Kyrsach
         {
             ConscriptsWindow conscriptsWindow = new ConscriptsWindow();
             conscriptsWindow.ShowDialog();
+        }
+
+        private void MainDB_SelectionChanged()
+        {
+
         }
     }
 }

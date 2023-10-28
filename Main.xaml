@@ -14,8 +14,7 @@
         <DataGrid Margin="0,302,0,0" Name="MainDB" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="White"/>
         <Button Content="ADD" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top" Height="59" Width="140" FontFamily="Algerian" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Name="Add" Click="Add_Click"/>
         <Button Content="EDIT" HorizontalAlignment="Left" Margin="155,238,0,0" VerticalAlignment="Top" Height="59" Width="140" FontFamily="Algerian" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" Name="Edit" Click="Edit_Click"/>
-        <Button Content="DELETE" HorizontalAlignment="Left" Margin="300,238,0,0" VerticalAlignment="Top" Height="59" Width="140" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}" Name="Delete" Click="Delete_Click"/>
-        <Button Content="INFO" HorizontalAlignment="Left" Margin="445,238,0,0" VerticalAlignment="Top" Height="59" Width="140" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}" Name="Info" Click="Info_Click"/>
+        <Button Content="INFO" HorizontalAlignment="Left" Margin="300,238,0,0" VerticalAlignment="Top" Height="59" Width="140" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}" Name="Info" Click="Info_Click"/>
         <Button Content="conscripts" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="59" Width="156" FontFamily="Algerian" FontSize="24" Background="{x:Null}" BorderBrush="{x:Null}" x:Name="conscripts" Click="conscripts_Click"/>
 
     </Grid>

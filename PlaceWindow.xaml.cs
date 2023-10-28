@@ -21,7 +21,7 @@ namespace Kyrsach
     public partial class PlaceWindow : Window
     {
         public int id = 0;
-        AddDataWindow addData;
+        AddDataWindow? addData;
         private string connectName = "Data Source=stud-mssql.sttec.yar.ru,38325; Initial Catalog=user209_db; Integrated Security=False; User ID=user209_db;Password = user209";
         public string ConnectName { get { return connectName; } set { connectName = value; } }
         public int good = 0;

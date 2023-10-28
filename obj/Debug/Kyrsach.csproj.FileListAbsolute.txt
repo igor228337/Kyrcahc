@@ -1,3 +1,6 @@
+D:\c# project\Kyrsach\bin\Debug\Kyrsach.exe.config
+D:\c# project\Kyrsach\bin\Debug\Kyrsach.exe
+D:\c# project\Kyrsach\bin\Debug\Kyrsach.pdb
 D:\c# project\Kyrsach\obj\Debug\Kyrsach.csproj.AssemblyReference.cache
 D:\c# project\Kyrsach\obj\Debug\AddDataWindow.g.cs
 D:\c# project\Kyrsach\obj\Debug\ConscriptsWindow.g.cs
@@ -11,3 +14,18 @@ D:\c# project\Kyrsach\obj\Debug\PrizevnikWindow.g.cs
 D:\c# project\Kyrsach\obj\Debug\App.g.cs
 D:\c# project\Kyrsach\obj\Debug\Kyrsach_MarkupCompile.cache
 D:\c# project\Kyrsach\obj\Debug\Kyrsach_MarkupCompile.lref
+D:\c# project\Kyrsach\obj\Debug\AddDataWindow.baml
+D:\c# project\Kyrsach\obj\Debug\ConscriptsWindow.baml
+D:\c# project\Kyrsach\obj\Debug\EditWindow.baml
+D:\c# project\Kyrsach\obj\Debug\Main.baml
+D:\c# project\Kyrsach\obj\Debug\MainWindow.baml
+D:\c# project\Kyrsach\obj\Debug\MedDocWindow.baml
+D:\c# project\Kyrsach\obj\Debug\PassportWindow.baml
+D:\c# project\Kyrsach\obj\Debug\PlaceWindow.baml
+D:\c# project\Kyrsach\obj\Debug\PrizevnikWindow.baml
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.g.resources
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.Properties.Resources.resources
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.csproj.GenerateResource.cache
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.csproj.CoreCompileInputs.cache
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.exe
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.pdb

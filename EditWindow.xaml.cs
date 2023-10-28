@@ -21,7 +21,7 @@ namespace Kyrsach
     public partial class EditWindow : Window
     {
         public Dictionary<string, string> people;
-        private Main main;
+        private Main? main;
         public string idUser;
         private List<string> table = new List<string>() { "Prizevnik", "Passport", "Meddoc", "Placeprop"};
         private List<string> columns = new List<string>();
@@ -73,7 +73,7 @@ namespace Kyrsach
                 { "Meddoc", ""},
                 { "Placeprop", ""}
             };
-            people["Passport"] = GetData($"SELECT Passport FROM Prizevnik WHERE id={id}");
+            people["Passport"] = GetData($"SELECT idPassport FROM Passport WHERE idPrizevnik={id}");
             people["Meddoc"] = GetData($"SELECT idmeddoc FROM PassportMeddoc WHERE idpassport={people["Passport"]}");
             people["Placeprop"] = GetData($"SELECT idplaceprop FROM PassportPlaceprop WHERE idpassport={people["Passport"]}");
         }

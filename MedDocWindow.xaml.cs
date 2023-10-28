@@ -20,7 +20,7 @@ namespace Kyrsach
     /// </summary>
     public partial class MedDocWindow : Window
     {
-        AddDataWindow addData;
+        AddDataWindow? addData;
         public int id;
         private string connectName = "Data Source=stud-mssql.sttec.yar.ru,38325; Initial Catalog=user209_db; Integrated Security=False; User ID=user209_db;Password = user209";
         public string ConnectName { get { return connectName; } set { connectName = value; } }
