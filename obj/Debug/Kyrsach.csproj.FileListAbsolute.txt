@@ -1,0 +1,13 @@
+D:\c# project\Kyrsach\obj\Debug\Kyrsach.csproj.AssemblyReference.cache
+D:\c# project\Kyrsach\obj\Debug\AddDataWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\ConscriptsWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\EditWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\Main.g.cs
+D:\c# project\Kyrsach\obj\Debug\MainWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\MedDocWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\PassportWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\PlaceWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\PrizevnikWindow.g.cs
+D:\c# project\Kyrsach\obj\Debug\App.g.cs
+D:\c# project\Kyrsach\obj\Debug\Kyrsach_MarkupCompile.cache
+D:\c# project\Kyrsach\obj\Debug\Kyrsach_MarkupCompile.lref

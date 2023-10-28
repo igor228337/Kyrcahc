@@ -1,0 +1,28 @@
+﻿<Window x:Class="Kyrsach.AddDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kyrsach"
+        mc:Ignorable="d"
+        Title="WARARM" Height="800" Width="1400"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mainfone.jpg"/>
+        </Grid.Background>
+        <Label Content="MEDDOC" FontFamily="Algerian" FontSize="72" HorizontalAlignment="Left" Margin="33,13,0,0" VerticalAlignment="Top" Height="86" Width="304"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="33,226,0,0" VerticalAlignment="Top" Height="86" Width="304" BorderBrush="{x:Null}" Background="{x:Null}" Name="MedDocBTN" Click="MedDocBTN_Click"/>
+        <Label Content="⥥" HorizontalAlignment="Left"  FontFamily="Algerian" FontSize="144" Margin="128,56,0,0" VerticalAlignment="Top" Height="170" Width="114"/>
+        <Label Content="Place" FontFamily="Algerian" FontSize="72" HorizontalAlignment="Left" Margin="405,13,0,0" VerticalAlignment="Top" Height="86" Width="235"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="379,226,0,0" VerticalAlignment="Top" Height="86" Width="304" BorderBrush="{x:Null}" Background="{x:Null}" Name="PlaceBTN" Click="PlaceBTN_Click"/>
+        <Label Content="⥥" HorizontalAlignment="Left"  FontFamily="Algerian" FontSize="144" Margin="475,56,0,0" VerticalAlignment="Top" Height="170" Width="114"/>
+        <Label Content="Passport" FontFamily="Algerian" FontSize="72" HorizontalAlignment="Left" Margin="696,13,0,0" VerticalAlignment="Top" Height="86" Width="360"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="725,226,0,0" VerticalAlignment="Top" Height="86" Width="304" BorderBrush="{x:Null}" Background="{x:Null}" Name="PassportBTN" Click="PassportBTN_Click"/>
+        <Label Content="⥥" HorizontalAlignment="Left"  FontFamily="Algerian" FontSize="144" Margin="819,56,0,0" VerticalAlignment="Top" Height="170" Width="114"/>
+        <Label Content="Prizevnik" FontFamily="Algerian" FontSize="72" HorizontalAlignment="Left" Margin="559,0,0,0" VerticalAlignment="Center" Height="86" Width="374"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="577,562,0,0" VerticalAlignment="Top" Height="86" Width="304" BorderBrush="{x:Null}" Background="{x:Null}" x:Name="PrizevnikBTN" Click="PrizevnikBTN_Click"/>
+        <Label Content="⥥" HorizontalAlignment="Left"  FontFamily="Algerian" FontSize="144" Margin="673,392,0,0" VerticalAlignment="Top" Height="170" Width="114"/>
+        <Button Content="Back" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="33,661,0,0" VerticalAlignment="Top" Height="86" Width="304" BorderBrush="{x:Null}" Background="{x:Null}" x:Name="BackBTN" Click="BackBTN_Click"/>
+    </Grid>
+</Window>

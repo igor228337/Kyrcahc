@@ -1,0 +1,28 @@
+﻿<Window x:Class="Kyrsach.PrizevnikWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kyrsach"
+        mc:Ignorable="d"
+        Title="PrizevnikWindow"  
+        Height="470" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mainfone.jpg"/>
+        </Grid.Background>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="45,18,0,0" VerticalAlignment="Top" Height="43" Width="84" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <Label Content="Phone" HorizontalAlignment="Left" Margin="207,18,0,0" VerticalAlignment="Top" Height="43" Width="89" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="367,18,0,0" VerticalAlignment="Top" Height="43" Width="101" FontFamily="Algerian" FontSize="24" BorderBrush="{x:Null}" Background="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="21" x:Name="Email" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox HorizontalAlignment="Left" Margin="182,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140" Height="21" x:Name="Phone" MaxLength="11"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Height="86" Width="478" BorderBrush="{x:Null}" Background="{x:Null}" x:Name="CreatePrizevnik" Click="CreatePrizevnik_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="358,66,0,0" VerticalAlignment="Top" Width="120" Name="Status">
+            <TextBlock>Годен</TextBlock>
+            <TextBlock>Не годен</TextBlock>
+            <TextBlock>Осуждён</TextBlock>
+        </ComboBox>
+        <Button Content="BACK" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Height="86" Width="221" BorderBrush="{x:Null}" Background="{x:Null}" x:Name="BackBTN" Click="BackBTN_Click"/>
+    </Grid>
+</Window>

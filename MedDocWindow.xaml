@@ -1,0 +1,22 @@
+﻿<Window x:Class="Kyrsach.MedDocWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kyrsach"
+        mc:Ignorable="d"
+        Title="WARARM" Height="470" Width="800"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mainfone.jpg"/>
+        </Grid.Background>
+        <Label Content="MEDDOC" FontFamily="Algerian" FontSize="72" HorizontalAlignment="Left" Margin="270,10,0,0" VerticalAlignment="Top" Height="86" Width="279"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="270,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="279" Height="59" FontSize="36" Background="White"/>
+        <TextBox x:Name="Description" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" Margin="270,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="279" Height="59" FontSize="36" Background="White"/>
+        <Button Content="ADD" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="270,252,0,0" VerticalAlignment="Top" Height="107" Width="279" BorderBrush="{x:Null}" Background="{x:Null}" x:Name="MeddocBTN" Click="MeddocBTN_Click"/>
+        <Label Content="Name" FontFamily="Algerian" FontSize="36" HorizontalAlignment="Left" Margin="153,104,0,0" VerticalAlignment="Top" Height="56" Width="112"/>
+        <Label Content="Description" FontFamily="Algerian" FontSize="36" HorizontalAlignment="Left" Margin="41,0,0,0" VerticalAlignment="Center" Height="59" Width="229"/>
+        <Button Content="BACK" FontFamily="Algerian" FontSize="72"  HorizontalAlignment="Left" Margin="10,353,0,0" VerticalAlignment="Top" Height="87" Width="199" BorderBrush="{x:Null}" Background="{x:Null}" Name="BackBTN" Click="BackBTN_Click"/>
+    </Grid>
+</Window>
