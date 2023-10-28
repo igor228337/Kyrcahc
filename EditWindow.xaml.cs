@@ -102,6 +102,8 @@ namespace Kyrsach
         }
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
+            Dictionary<string, string> dlya = new Dictionary<string, string>() { { "Prizevnik", "id" }, { "Passport", "idPassport"}, { "PassportMeddoc", "idpassmed" },
+                        { "Meddoc", "idMeddoc"}, { "PassportPlaceprop", "idpassplace"}, { "Placeprop", "idPlaceprop"} };
             GetUserAllInfo(idUser);
             if (Value.Text == null || Value.Text == "")
             {
@@ -112,18 +114,19 @@ namespace Kyrsach
             {
                 using (SqlConnection connection = new SqlConnection(ConnectName))
                 {
-
+                    
                     connection.Open();
                     SqlCommand com = new SqlCommand();
+                    string command;
                     if (isNumber)
                     {
-                        com.CommandText = $"UPDATE {Table.SelectedValue.ToString()} SET {Column.Text}={numericValue};";
+                        command = $"UPDATE {Table.SelectedValue.ToString()} SET {Column.Text}={numericValue} WHERE {dlya[$"{Table.SelectedValue.ToString()}"]}={people[$"{Table.SelectedValue.ToString()}"]};";
                     }
                     else
                     {
-                        com.CommandText = $"UPDATE {Table.SelectedValue.ToString()} SET {Column.Text}='{Value.Text}';";
+                        command = $"UPDATE {Table.SelectedValue.ToString()} SET {Column.Text}='{Value.Text}' WHERE {dlya[$"{Table.SelectedValue.ToString()}"]}={people[$"{Table.SelectedValue.ToString()}"]};";
                     }
-                    
+                    com.CommandText = command;
                     com.Connection = connection;
                     com.ExecuteNonQuery();
                 }
